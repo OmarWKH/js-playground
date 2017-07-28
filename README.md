@@ -5,14 +5,21 @@ A change
 Another
 One more
 
-[![Build Status](http://ec2-34-229-65-44.compute-1.amazonaws.com/jenkins/buildStatus/icon?job=js-playground)](http://ec2-34-229-65-44.compute-1.amazonaws.com/jenkins/job/js-playground/)
+[![Build Status](http://ec2-107-23-17-19.compute-1.amazonaws.com:8080/buildStatus/icon?job=js-playground)](http://ec2-107-23-17-19.compute-1.amazonaws.com:8080/buildStatus/icon?job=js-playground)
 
+https://fast-ocean-54934.herokuapp.com/
+
+# Build
+
+## Express app
 npm install
 
+## AngularJS app
 cd angularapp
 npm install
 bower install
-npm prod
+npm run prod
 
+# Run
 cd ..
 npm start
