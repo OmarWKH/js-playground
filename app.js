@@ -22,6 +22,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// protected angularapp
+app.all('/angularapp', function(req, res, next) {
+	if (false) {
+		next();
+	} else {
+		res.redirect('/');
+	}
+});
+app.use('/angularapp', express.static(path.join(__dirname, 'angularapp')));
+
 app.use('/', index);
 app.use('/users', users);
 
